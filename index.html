@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #content {
+            width: 100%;
+            height: 80vh; /* Ajuste a altura conforme necessário */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="pages/about.html" onclick="loadContent('pages/about.html', event)">Sobre Mim</a></li>
+                <li><a href="pages/education.html" onclick="loadContent('pages/education.html', event)">Formação</a></li>
+                <li><a href="pages/portfolio.html" onclick="loadContent('pages/portfolio.html', event)">Portfólio</a></li>
+                <li><a href="pages/contact.html" onclick="loadContent('pages/contact.html', event)">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <iframe id="content"></iframe>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Nome</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
